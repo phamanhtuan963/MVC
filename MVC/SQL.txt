@@ -1,0 +1,13 @@
+CREATE DATABASE mvc;
+
+USE mvc;
+
+CREATE TABLE mvc(
+id int(11) NOT NULL AUTO_INCREAMENT PRIMARY KEY,
+title varchar(50) NOT NULL,
+price int(11) NOT NULL,
+image BLOB,
+producer varchar(50) NOT NULL,
+);
+
+INSERT INTO mvc (title,price,image,producer) VALUES ('MineCraft',1000,LOAD_FILE('E:/minecraft.jpg'),'BigBoy')
